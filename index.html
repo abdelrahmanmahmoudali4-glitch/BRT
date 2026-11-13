@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BRT Egypt</title>
+    <link rel="icon" type="image/png" href="Icon/1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Icon/1.png" class="logo" alt="BRT Logo">
+                <span class="logo-text">Bus Rapid Transit</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ticket">Ticket</a></li>
+                <li><a href="#location">Location </a></li>
+                <li><a href="#download-app">Mobile Application</a></li>
+                <li><a href="#contact">Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="home_content">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="f">
+                            <h3> <span style="color:#0072CE; font-size: 40px;">B</span>us <span
+                                    style="color:#0072CE; font-size: 40px">R</span>apid
+                                <span style="color:#0072CE; font-size: 40px">T</span>ransit
+                            </h3>
+                            <h1>Smart Mobility That Combines Efficiency & Safety</h1>
+                            <p>BRT Egypt provides a smart, safe, and fast transportation system designed to enhance
+                                mobility along the Ring Road with high efficiency.</p>
+                        </div>
+                    </form>
+                    <div class="content_text">
+                        <img src="Icon/cutting photo.png" alt="BTR" title="BTR">
+                    </div>
+                </div>
+                <div class="downbar">
+                    <ul>
+                        <li><img src="Icon/1.png" alt="" class="logo-img"></li>
+                        <li><img src="Icon/2.jpg" alt=""></li>
+                        <li><img src="Icon/3.jpg" alt=""></li>
+                        <li><img src="Icon/4.jpeg" alt=""></li>
+                        <li><img src="Icon/5.jpg" alt=""></li>
+                        <li><img src="Icon/6.jpg" alt=""></li>
+                        <li><img src="Icon/7.jpg" alt=""></li>
+                        <li><img src="Icon/8.jpg" alt=""></li>
+                        <li><img src="Icon/9.jpg" alt=""></li>
+                        <li><img src="Icon/10.jpeg" alt=""></li>
+                        <li><img src="Icon/11.jpg" alt=""></li>
+                        <li><img src="Icon/1.png" alt="" class="logo-img"></li>
+                        <li><img src="Icon/2.jpg" alt=""></li>
+                        <li><img src="Icon/3.jpg" alt=""></li>
+                        <li><img src="Icon/4.jpeg" alt=""></li>
+                        <li><img src="Icon/5.jpg" alt=""></li>
+                        <li><img src="Icon/6.jpg" alt=""></li>
+                        <li><img src="Icon/7.jpg" alt=""></li>
+                        <li><img src="Icon/8.jpg" alt=""></li>
+                        <li><img src="Icon/9.jpg" alt=""></li>
+                        <li><img src="Icon/10.jpeg" alt=""></li>
+                        <li><img src="Icon/11.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="img">
+                        <img src='Icon/interial.png' alt="interial of BRT">
+                        <img src='Icon/int.png' alt="">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="text_blue"> Bus Rapid Transit </h2>
+                        <p>The Bus Rapid Transit (BRT) is a modern and intelligent public transport system operating on
+                            the Cairo Ring Road. It offers high-speed, efficient service through dedicated lanes, smart
+                            stations, internal and external security cameras, and an advanced online booking system.
+                            <br>
+                            The BRT system is designed to save time, reduce congestion and pollution, and provide a
+                            safer, smarter travel experience through real-time tracking, automated alerts, and digital
+                            payment options.
+                        </p>
+
+                        <h3 class="numbus"> 20 bus move per hour</h3>
+                        <div class="statistics">
+                            <ul>
+                                <li><strong>Number of buses</strong></li>
+                                <li><strong> 100 </strong></li>
+                                <li>Air_conditioned electric bus</li>
+                            </ul>
+                            <ul>
+                                <li><strong>Capacity of each bus</strong></li>
+                                <li><strong>38</strong></li>
+                                <li>passenger</li>
+                            </ul>
+                            <ul>
+                                <li><strong>Transport capacity</strong></li>
+                                <li><strong>3,200</strong></li>
+                                <li>passenger per hour in both direction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="ticket">
+            <div class="container">
+                <h1 class="tp">Ticket Prices</h1>
+                <ul class="price-grid">
+                    <li>
+                        <span class="trip-info">4 Stations</span>
+                        <span class="trip-price">5 EGP</span>
+                    </li>
+                    <li>
+                        <span class="trip-info">9 Stations</span>
+                        <span class="trip-price">10 EGP</span>
+                    </li>
+                    <li>
+                        <span class="trip-info">14 Stations</span>
+                        <span class="trip-price">15 EGP</span>
+                    </li>
+                </ul>
+                <hr class="custom-line">
+                <h1 class="bs">Bus Stations</h1>
+                <hr class="custom-line">
+                <ul class="station-grid">
+                    <li>
+                        <span class="station-name">Adly Mansour</span>
+                        <a href="https://maps.google.com/?q=Adly+Mansour+Station+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Ahmed Orabi</span>
+                        <a href="https://maps.google.com/?q=Ahmed+Orabi+Ring+Road+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Ard El Lewa</span>
+                        <a href="https://maps.google.com/?q=Ard+El+Lewa+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Autostrad (Maadi)</span>
+                        <a href="https://maps.google.com/?q=Autostrad+Maadi+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="station-name">Bashtil</span>
+                        <a href="https://maps.google.com/?q=Bashtil+Station+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Basous</span>
+                        <a href="https://maps.google.com/?q=Basous+Qalyubia" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Basous El Kanater</span>
+                        <a href="https://maps.google.com/?q=Basous+El+Kanater" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="station-name">Cairo Festival City</span>
+                        <a href="https://maps.google.com/?q=Cairo+Festival+City" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">City Centre El Maadi</span>
+                        <a href="https://maps.google.com/?q=City+Centre+Maadi" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="station-name">El 10 Men Ramadan</span>
+                        <a href="https://maps.google.com/?q=El+10+of+Ramadan+Station+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Assar</span>
+                        <a href="https://maps.google.com/?q=El+Assar+Axis+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Bahr El Aazam</span>
+                        <a href="https://maps.google.com/?q=El+Bahr+El+Aazam+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Barawan</span>
+                        <a href="https://maps.google.com/?q=El+Barawan" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Ezba</span>
+                        <a href="https://maps.google.com/?q=El+Ezba" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Hadaba El Wosta</span>
+                        <a href="https://maps.google.com/?q=El+Hadaba+El+Wosta+Mokattam" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Haram</span>
+                        <a href="https://maps.google.com/?q=El+Haram+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Jazayer</span>
+                        <a href="https://maps.google.com/?q=El+Jazayer+Maadi" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Manyal</span>
+                        <a href="https://maps.google.com/?q=El+Manyal+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Marg</span>
+                        <a href="https://maps.google.com/?q=El+Marg+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Moatamadeya</span>
+                        <a href="https://maps.google.com/?q=El+Moatamadeya" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El-Mokattam</span>
+                        <a href="https://maps.google.com/?q=Mokattam+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El-Moshir Tantawy</span>
+                        <a href="https://maps.google.com/?q=El-Moshir+Tantawy+Axis" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Nour</span>
+                        <a href="https://maps.google.com/?q=El+Nour+Mosque" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Sayad</span>
+                        <a href="https://maps.google.com/?q=El+Sayad" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Talibiya</span>
+                        <a href="https://maps.google.com/?q=El+Talibiya+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Trolley</span>
+                        <a href="https://maps.google.com/?q=El+Trolley" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Warak</span>
+                        <a href="https://maps.google.com/?q=El+Warak+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">El Zahraa</span>
+                        <a href="https://maps.google.com/?q=El+Zahraa+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Eskendereya El Zerai</span>
+                        <a href="https://maps.google.com/?q=Alexandria+Agricultural+Road+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Ezbet El Gezira</span>
+                        <a href="https://maps.google.com/?q=Ezbet+El+Gezira" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Faisal</span>
+                        <a href="https://maps.google.com/?q=Faisal+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Gharb El Rashah</span>
+                        <a href="https://maps.google.com/?q=Gharb+El+Rashah" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Madkhal El Tagamoa</span>
+                        <a href="https://maps.google.com/?q=Tagamoa+Entrance+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Mahwar El Hadara</span>
+                        <a href="https://maps.google.com/?q=Mahwar+El+Hadara+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Mahwar El Shaheed</span>
+                        <a href="https://maps.google.com/?q=Mahwar+El+Shaheed+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Mansheyet El Bakari</span>
+                        <a href="https://maps.google.com/?q=Mansheyet+El+Bakari" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Manti</span>
+                        <a href="https://maps.google.com/?q=Manti+Qalyubia" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Masged El Madina</span>
+                        <a href="https://maps.google.com/?q=Masged+El+Madina" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Masr El Tayeran</span>
+                        <a href="https://maps.google.com/?q=Egyptair+Building+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Masref Belbeis</span>
+                        <a href="https://maps.google.com/?q=Belbeis+Drain+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Mehwar 26 Yolyo</span>
+                        <a href="https://maps.google.com/?q=26+July+Axis+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Metro Embaba</span>
+                        <a href="https://maps.google.com/?q=Embaba+Metro+Station" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Metwaly El Shaarawy</span>
+                        <a href="https://maps.google.com/?q=Metwaly+El+Shaarawy+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Moasaset El Zakah</span>
+                        <a href="https://maps.google.com/?q=Moasaset+El+Zakah+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Mostorod</span>
+                        <a href="https://maps.google.com/?q=Mostorod+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Police Academy</span>
+                        <a href="https://maps.google.com/?q=Police+Academy+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Rashah w El Khossous</span>
+                        <a href="https://maps.google.com/?q=El+Khossous+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Saft El Laban</span>
+                        <a href="https://maps.google.com/?q=Saft+El+Laban+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Tahya Masr</span>
+                        <a href="https://maps.google.com/?q=Tahya+Misr+Bridge+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Tareeq El Suez</span>
+                        <a href="https://maps.google.com/?q=Suez+Road+Cairo" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Tersa</span>
+                        <a href="https://maps.google.com/?q=Tersa+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="station-name">Zanien</span>
+                        <a href="https://maps.google.com/?q=Zanien+Giza" target="_blank" class="map-icon">
+                            <div class="circle-outer">
+                                <div class="circle-inner"><i class="fa-solid fa-location-dot"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="space"></div>
+
+        <section id="location">
+            <div class="container">
+                <h1 class="sm">BRT Stations Map</h1>
+                <div class="map_station">
+                    <div id="map-container" onclick="activateMap()">
+                        <div id="map"></div>
+                        <div id="map-overlay">
+                            <div class="overlay-content">
+                                <span class="pin-icon">📍</span>
+                                <span>Click here to find your location and the nearest station</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="info-box"></div>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="download-app">
+            <div class="container">
+                <h1 class="app-section-title">BRT Mobile Application</h1>
+                <div class="app-content-wrapper">
+
+                    <div class="app-phone-display">
+                        <div class="phone-mockup">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen-container">
+                                <img id="phone-screen" src="Screenshot_1779232560-da2a563b1945ce6a00f3974482f63e5e.png" alt="BRT App Screen">
+                                <div id="phone-fallback" class="phone-fallback-view" style="display:none;">
+                                    <i class="fa-solid fa-bus"></i>
+                                    <h4 id="fallback-title">Easy Booking</h4>
+                                    <p>Screen Interface Active</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-features-grid-wrapper">
+                        <div class="app-features-grid">
+                            <div class="feature-card active" data-image="Easy Booking.png" data-title="Easy Booking" data-icon="fa-ticket">
+                                <div class="feature-icon"><i class="fa-solid fa-ticket"></i></div>
+                                <h3>Easy Booking</h3>
+                                <p>Book your one-time tickets or purchase long-term subscriptions digitally in seconds.</p>
+                            </div>
+                            <div class="feature-card" data-image="Live Tracking.png" data-title="Live Tracking" data-icon="fa-map-location-dot">
+                                <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <h3>Live Tracking</h3>
+                                <p>Track all BRT buses on the map in real-time and know exactly when they arrive.</p>
+                            </div>
+                            <div class="feature-card" data-image="Seat Availability.png" data-title="Seat Availability" data-icon="fa-chair">
+                                <div class="feature-icon"><i class="fa-solid fa-chair"></i></div>
+                                <h3>Seat Availability</h3>
+                                <p>Find the nearest bus with available seating capacity before it arrives at your stop.</p>
+                            </div>
+                            <div class="feature-card" data-image="Instant Complaints.png" data-title="Instant Complaints" data-icon="fa-comment-dots">
+                                <div class="feature-icon"><i class="fa-solid fa-comment-dots"></i></div>
+                                <h3>Instant Complaints</h3>
+                                <p>Direct channel to submit feedback or reports to ensure system efficiency and safety.</p>
+                            </div>
+                        </div>
+                        <div class="app-download-action">
+                            <p>Get the full smart mobility experience right on your smartphone</p>
+                            <div class="download-buttons-flex">
+                                <a href="javascript:void(0);" class="app-blue-btn download-btn-alert">
+                                    <i class="fa-brands fa-google-play"></i> Google Play
+                                </a>
+                                <a href="javascript:void(0);" class="app-black-btn download-btn-alert">
+                                    <i class="fa-brands fa-apple"></i> App Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="space"></div>
+
+        <section id="contact">
+            <div class="container">
+                <h1 class="contact-title">Contact & Complaints</h1>
+                <div class="contact-form-wrapper">
+                    <form id="complaint-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="tel" id="phone-input" placeholder="Phone Number" maxlength="11" pattern="[0-9]{11}" title="رقم الهاتف يجب أن يتكون من 11 رقم تماماً" required>
+                        </div>
+                        <input type="email" id="email-input" placeholder="Your Email"
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                title="يرجى إدخال بريد إلكتروني صحيح بالأحرف الإنجليزية والأرقام فقط" required>
+                        <textarea placeholder="Your Message or Complaint" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot-wrapper">
+        <div id="chat-window">
+            <div class="chat-header">
+                <span>BRT Assistant</span>
+                <button onclick="toggleChat()">×</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <p class="bot-msg">مرحباً بك في الأتوبيس الترددي BRT مصر! كيف يمكنني مساعدتك اليوم؟</p>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="اكتب استفسارك هنا...">
+                <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chatbot-toggle" onclick="toggleChat()">
+            <i class="fa-solid fa-comment-dots"></i>
+        </button>
+    </div>
+</body>
+
+</html>
